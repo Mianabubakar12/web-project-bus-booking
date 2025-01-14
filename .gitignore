@@ -1,0 +1,8 @@
+# vs code temps
+.vscode/
+
+# vim temps
+*.*~
+
+# dotnet
+obj/
