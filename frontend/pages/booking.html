@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyRide - Booking</title>
+    <link rel="stylesheet" href="../css/booking.css">
+    <script src="../js/app.js" defer></script>
+    <script src="../js/booking.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>BookMyRide</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="history.html">Booking History</a>
+            <a href="../index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Book Your Seat</h2>
+        <form id="bookingForm">
+            <label for="city-from">From:</label>
+            <select id="city-from" required></select>
+
+            <label for="city-to">To:</label>
+            <select id="city-to" required></select>
+
+            <label for="seat-select">Select Seat:</label>
+            <select id="seat-select" required>
+                <option value="">Select Seat</option>
+            </select>
+
+            <label for="easypaisa-account">Easypaisa Account Number:</label>
+            <input type="text" id="easypaisa-account" required>
+
+            <button type="button" id="book-button">Book Now</button>
+        </form>
+        <p id="success-message" style="display:none;"></p>
+    </main>
+    <footer>
+        <p>&copy; 2023 BookMyRide. All rights reserved.</p>
+    </footer>
+</body>
+</html>
