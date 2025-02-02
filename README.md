@@ -174,6 +174,6 @@ net start W3SVC
 sh
 dotnet BusTicketBookingAPI.dll &
 ---
-# *👨‍💻 Developed By*
-🚀 *UCP Tigers
+# * Developed By*
+ *UCP Tigers
 📧 Contact: 03470914934
