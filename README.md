@@ -31,7 +31,9 @@ web-project-bus-booking/
 
 # * Setup Instructions*
 ### * Clone the Repository*
+
 sh
+VS code Terminal
 git clone https://github.com/mianabubakar/web-project-bus-booking.git
 cd web-project-bus-booking
 
