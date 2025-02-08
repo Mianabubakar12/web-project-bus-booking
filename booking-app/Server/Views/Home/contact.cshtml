@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Entry Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <div class="form-container">
+      <h2>Add Bus Details</h2>
+      <form id="bus-form">
+        <div class="form-group">
+          <label for="bus-name">Bus Name:</label>
+          <input type="text" id="bus-name" name="busName" placeholder="Enter bus name" required>
+        </div>
+        <div class="form-group">
+          <label for="bus-number">Bus Number:</label>
+          <input type="text" id="bus-number" name="busNumber" placeholder="Enter bus number" required>
+        </div>
+        <div class="form-group">
+          <label for="from">From:</label>
+          <select id="from" name="from" required>
+            <option value="" disabled selected>Select the starting location</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+            <option value="Peshawar">Peshawar</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="to">To:</label>
+          <select id="to" name="to" required>
+            <option value="" disabled selected>Select the destination location</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+            <option value="Peshawar">Peshawar</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="total-seats">Total Seats:</label>
+          <input type="number" id="total-seats" name="totalSeats" placeholder="Enter total seats" required>
+        </div>
+        <div class="form-group">
+          <label for="fare">Fare (per seat):</label>
+          <input type="number" id="fare" name="fare" placeholder="Enter fare per seat" required>
+        </div>
+        <div class="form-group">
+          <label for="rent">Rent (total):</label>
+          <input type="number" id="rent" name="rent" placeholder="Enter total rent" required>
+        </div>
+        <div class="form-group">
+          <label for="commodities">Commodities:</label>
+          <input type="text" id="commodities" name="commodities" placeholder="Enter commodities (e.g., WiFi, AC)">
+        </div>
+        <div class="form-group">
+          <label for="stays">Stays (if any):</label>
+          <textarea id="stays" name="stays" placeholder="Enter stay locations"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="route">Route:</label>
+          <textarea id="route" name="route" placeholder="Enter route details (e.g., Lahore -> Islamabad)"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="stops">Stops:</label>
+          <textarea id="stops" name="stops" placeholder="Enter stop locations (e.g., Gujranwala, Sialkot)"></textarea>
+        </div>
+        <button type="submit" class="btn">Add Bus</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

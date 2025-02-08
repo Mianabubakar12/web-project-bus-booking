@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Server</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Server.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <!-- Custom Navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="bus.png" alt="Logo" class="logo-img"> <!-- Logo Image -->
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="@((ViewData["Title"]?.ToString()?.Contains("Home") ?? false) ? "active" : "")">Home</a>
+                <a href="about.html" class="@((ViewData["Title"]?.ToString()?.Contains("About") ?? false) ? "active" : "")">About</a>
+                <a href="services.html" class="@((ViewData["Title"]?.ToString()?.Contains("Services") ?? false) ? "active" : "")">Services</a>
+                <a href="contact.html" class="@((ViewData["Title"]?.ToString()?.Contains("Contact") ?? false) ? "active" : "")">Admin</a>
+                <a href="login.html" class="@((ViewData["Title"]?.ToString()?.Contains("Login") ?? false) ? "active" : "")">Login</a>
+                <a href="signup.html" class="@((ViewData["Title"]?.ToString()?.Contains("Signup") ?? false) ? "active" : "")">Signup</a>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
